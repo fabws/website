@@ -51,7 +51,7 @@ nav#navbar {
 
 #navbar > a:first-child {
     font-weight: bold;
-    font-size: larger;
+    font-size: 30px;
 }
 
 #navbar a {
@@ -90,6 +90,7 @@ nav#navbar {
 
     #hamburger-menu-icon {
         display: block;
+        line-height: 0;
     }
 
     #navbar-items strong a {
