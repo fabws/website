@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 
 :root {
     font-family: 'Roboto', sans-serif;
     overflow-y: scroll;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+hr {
+    border-width: 1;
+    width: 100%;
+    margin: none;
 }
 
 html,
@@ -10,10 +20,50 @@ body {
     margin: 0;
 }
 
+.button,
+button,
+.button.double > * {
+    background-color: #fce563;
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* .button,
+button {
+} */
+
+.button.double {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.button.double > *:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button.double > *:nth-child(2) {
+    background-color: #d114;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.button > a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: ; */
+}
+
 body {
-    padding: 20px;
-    padding-bottom: 0;
     padding-top: 48px;
+}
+
+body > * {
+    padding: 0 20px;
 }
 
 * {
@@ -27,8 +77,10 @@ video {
 
 nav#navbar {
     padding: 0 10px;
-    box-shadow: 2px 2px 12px #0003;
+    box-shadow: 2px 2px 12px #0000;
     width: 100%;
+    transition-duration: 200ms;
+    transition-property: box-shadow;
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -38,7 +90,11 @@ nav#navbar {
     align-items: center;
     font-size: 20px;
     height: 48px;
-    
+}
+
+nav#navbar.scrolled {
+    box-shadow: 2px 2px 12px #0003;
+    transition-duration: 500ms;
 }
 
 @supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
@@ -49,7 +105,7 @@ nav#navbar {
     }
 }
 
-#navbar > a:first-child {
+#navbar>a:first-child {
     font-weight: bold;
     font-size: 30px;
 }

@@ -9,6 +9,19 @@ function hideHamburgerMenu() {
     navBar.classList.remove("open");
 }
 
-hamburgerButton.addEventListener("click", () => {
-    showHamburgerMenu();
-});
+function toggleHamburgerMenu() {
+    if (navBar.classList.contains("open")) {
+        hideHamburgerMenu();
+    } else {
+        showHamburgerMenu();
+    }
+}
+
+hamburgerButton.addEventListener("click", toggleHamburgerMenu);
+document.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop) {
+        navBar.classList.add("scrolled");
+    } else {
+        navBar.classList.remove("scrolled");
+    }
+}, {passive: true});
