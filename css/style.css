@@ -183,3 +183,38 @@ nav#navbar.scrolled {
         display: none;
     }
 }
+
+table {
+    border-spacing: 0px;
+    border: 1px solid #555;
+    border-right: none;
+    border-top: none;
+}
+
+td, th {
+    border: 1px solid #555;
+    border-bottom: none;
+    border-left: none;
+    padding: 8px 12px;
+    /* word-break: normal; */
+    /* word-break: break-all; */
+}
+
+@media screen and (max-width: 700px) {
+    table {
+        font-size: 2vw;
+    }
+}
+
+th {
+    background-color: #bbb;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+#landing {
+    text-align: center;
+    font-size: 20px;
+}
