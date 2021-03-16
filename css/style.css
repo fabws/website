@@ -22,7 +22,7 @@ body {
 
 .button,
 button,
-.button.double > * {
+.button.double>* {
     background-color: #fce563;
     display: inline;
     padding: 10px 25px;
@@ -41,18 +41,18 @@ button {
     padding: 0;
 }
 
-.button.double > *:first-child {
+.button.double>*:first-child {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.button.double > *:nth-child(2) {
+.button.double>*:nth-child(2) {
     background-color: #d114;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-.button > a {
+.button>a {
     text-decoration: none;
     color: black;
     /* font-weight: ; */
@@ -62,7 +62,7 @@ body {
     padding-top: 48px;
 }
 
-body > * {
+body>* {
     padding: 0 20px;
 }
 
