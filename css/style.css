@@ -101,7 +101,7 @@ nav#navbar.scrolled {
     nav#navbar {
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        background-color: #fffe;
+        background-color: #fffc;
     }
 }
 
@@ -202,8 +202,30 @@ td, th {
 
 @media screen and (max-width: 700px) {
     table {
-        font-size: 2vw;
+        /* font-size: 2vw; */
+        width: 100%;
     }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        height: 0px;
+    }
+
+    td {
+        z-index: -1;
+        color: red;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    /* td:before {
+        position: absolute;
+        width: 100%;
+        content: attr(data-title);
+    } */
 }
 
 th {
