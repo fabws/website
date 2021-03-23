@@ -29,6 +29,12 @@ button,
     border-radius: 20px;
     text-align: center;
     font-size: 18px;
+    transition-duration: 150ms;
+    transition-property: opacity, box-shadow, filter;
+}
+
+.button.double {
+    background-color: transparent;
 }
 
 /* .button,
@@ -47,9 +53,16 @@ button {
 }
 
 .button.double>*:nth-child(2) {
-    background-color: #d114;
+    background-color: #f4ac4d;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    
+}
+
+.button.double>*:hover {
+    opacity: 0.7;
+    filter: grayscale(0.25);
+    box-shadow: 0px 0px 10px #0001;
 }
 
 .button>a {
@@ -135,7 +148,6 @@ nav#navbar.scrolled {
 
 #navbar-items li:hover {
     opacity: .5;
-    color: red;
 }
 
 #navbar-items strong {
@@ -191,7 +203,8 @@ table {
     border-top: none;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #555;
     border-bottom: none;
     border-left: none;
@@ -217,4 +230,20 @@ tr:nth-child(odd) {
 #landing {
     text-align: center;
     font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+}
+
+@media screen and (min-width: 756px) {}
+
+h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 10px;
 }
