@@ -56,7 +56,7 @@ button {
     background-color: #f4ac4d;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    
+
 }
 
 .button.double>*:hover {
@@ -234,6 +234,7 @@ th {
         width: 100%;
         position: relative;
     }
+
     /* td:before {
         position: absolute;
         width: 100%;
