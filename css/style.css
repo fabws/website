@@ -42,17 +42,18 @@ button {
 
     display: inline;
     padding: 10px 25px;
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     transition-duration: 150ms;
-    transition-property: opacity, box-shadow, filter;
+    transition-property: opacity, background-color;
     flex-shrink: 1;
 }
 
 .button:hover,
 button:hover {
-    opacity: .7;
+    /* opacity: .7; */
+    background-color: #fff2;
 }
 
 .button>a,
