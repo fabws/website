@@ -28,19 +28,31 @@
                 <li><a href="/contact.html">Kontakt</a></li>
             </ul>
         </nav>
-
-        <h1>Donera</h1>
-        <div>
-            <a href="#swish">Swish</a>
-            <a href="#bank">Bankgiro</a>
+        <div class="narrow">
+            <h1>Donera</h1>
+            <div class="switch">
+                <a class="selected" href="#swish">SWISH</a>
+                <a href="#bank">BANKGIRO</a>
+            </div>
+            <section class="switch-section" id="swish">
+                <div>
+                    <p>Swisha valfritt belopp till <span class="phone-number">123 633 340 5:</span></p>
+                    <ol>
+                        <li>Öppna swish-appen.</li>
+                        <li>Välj "Skanna".</li>
+                        <li>Rikta kameran mot QR-koden.</li>
+                        <li>Fyll i belopp och eventuellt meddelande.</li>
+                        <li>Swisha!</li>
+                    </ol>
+                </div>
+                <img width="200" src="img/qr.svg" alt="Swish QR-kod" />
+            </section>
+            <section class="switch-section" id="bank">
+                <p>Sätt in din donation på bankgirot <span class="bank-number">447-4094</span></p>
+                <img width="200" src="img/bankgiro.png" alt="Bankgiros logga" />
+            </section>
         </div>
-        <section id="swish">
-            <p>Swisha valfritt belopp till <span class="phone-number">123 633 340 5</span></p>
-            <img width="200" src="img/qr.svg" alt="Swish QR-kod" />
-        </section>
-        <section id="bank">
-            <p>Sätt in din donation på bankgirot <span class="bank-number">447-4094</span></p>
-        </section>
+
         <footer>
             <div class="narrow">
                 <p>
@@ -53,5 +65,6 @@
             </div>
         </footer>
         <script src="js/script.js"></script>
+        <script src="js/switch.js"></script>
     </body>
 </html>

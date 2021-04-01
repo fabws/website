@@ -26,6 +26,10 @@ a {
     color: #3b857c;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -206,6 +210,30 @@ table {
     border-right: none;
     border-top: none;
     width: 100%;
+}
+
+.switch {
+    height: 48px;
+    background-color: #aaa;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.switch a {
+    color: black;
+    text-decoration: none;
+}
+
+.switch a.selected {
+    font-weight: bold;
+}
+
+.switch-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 td,
