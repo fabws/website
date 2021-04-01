@@ -267,21 +267,21 @@ th {
         border-top-color: #0004;
     }
 
-    td:nth-child(1) {
+    table.project td:nth-child(1) {
         border-top-color: black;
     }
 
-    td:nth-child(1)::before {
+    table.project td:nth-child(1)::before {
         content: "Värde (kr): ";
         font-weight: bold;
     }
 
-    td:nth-child(2)::before {
+    table.project td:nth-child(2)::before {
         content: "Projekt: ";
         font-weight: bold;
     }
 
-    td:nth-child(3)::before {
+    table.project td:nth-child(3)::before {
         content: "Innehåll: ";
         font-weight: bold;
     }
