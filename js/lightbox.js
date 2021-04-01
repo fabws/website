@@ -10,6 +10,13 @@ function showPicture(src) {
     imageShowcase.removeAttribute("hidden");
 }
 
+function hidePicture() {
+    const img = imageShowcase.querySelector("img");
+    img.src = "";
+    imageShowcase.setAttribute("hidden", "");
+}
+
+imageShowcase.addEventListener("click", hidePicture);
 images.forEach(image => {
     image.addEventListener("click", () => showPicture(image.src));
 });

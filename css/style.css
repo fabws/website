@@ -133,7 +133,7 @@ nav#navbar.scrolled {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px 10px;
+    gap: 20px;
 }
 
 #navbar-items a {
@@ -144,6 +144,10 @@ nav#navbar.scrolled {
 #navbar-items li {
     transition-duration: 250ms;
     transition-property: opacity;
+}
+
+#navbar-items li a.facebook {
+    color: #164a99;
 }
 
 #navbar-items li:hover {
@@ -299,4 +303,25 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     gap: 10px;
+}
+
+#image-showcase {
+    background-color: #000d;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#image-showcase[hidden] {
+    display: none;
+}
+
+#image-showcase > img {
+    border: 1px solid white;
 }
