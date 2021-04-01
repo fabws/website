@@ -79,7 +79,7 @@ nav#navbar {
     box-shadow: 2px 2px 12px #0000;
     width: 100%;
     transition-duration: 200ms;
-    transition-property: box-shadow, min-height, font-size;
+    transition-property: box-shadow, min-height;
     transition-timing-function: ease;
     background-color: #fff;
     position: fixed;
