@@ -334,6 +334,6 @@ h1 {
     display: none;
 }
 
-#image-showcase > img {
+#image-showcase>img {
     border: 1px solid white;
 }

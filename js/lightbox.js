@@ -17,6 +17,6 @@ function hidePicture() {
 }
 
 imageShowcase.addEventListener("click", hidePicture);
-images.forEach(image => {
+images.forEach((image) => {
     image.addEventListener("click", () => showPicture(image.src));
 });
