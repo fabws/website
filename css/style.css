@@ -233,11 +233,31 @@ th {
     }
 
     td {
-        z-index: -1;
-        color: red;
+        /* z-index: -1; */
+        /* color: red; */
         display: block;
         width: 100%;
         position: relative;
+        border-top-color: transparent;
+    }
+
+    td:nth-child(1) {
+        border-top-color: black;
+    }
+
+    td:nth-child(1)::before {
+        content: "Värde (kr): ";
+        font-weight: bold;
+    }
+
+    td:nth-child(2)::before {
+        content: "Projekt: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(3)::before {
+        content: "Innehåll: ";
+        font-weight: bold;
     }
 
     /* td:before {
