@@ -18,10 +18,14 @@ function toggleHamburgerMenu() {
 }
 
 hamburgerButton.addEventListener("click", toggleHamburgerMenu);
-document.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 0) {
-        navBar.classList.add("scrolled");
-    } else {
-        navBar.classList.remove("scrolled");
-    }
-}, {passive: true});
+document.addEventListener(
+    "scroll",
+    () => {
+        if (document.documentElement.scrollTop > 0) {
+            navBar.classList.add("scrolled");
+        } else {
+            navBar.classList.remove("scrolled");
+        }
+    },
+    { passive: true }
+);
