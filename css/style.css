@@ -350,7 +350,7 @@ h1 {
 }
 
 #image-showcase {
-    background-color: #000d;
+    background-color: #000e;
     position: fixed;
     display: flex;
     bottom: 0;
@@ -358,8 +358,8 @@ h1 {
     left: 0;
     top: 0;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-
 }
 
 #image-showcase[hidden] {
@@ -368,4 +368,8 @@ h1 {
 
 #image-showcase>img {
     border: 1px solid white;
+}
+
+#image-showcase>p {
+    color: white;
 }
