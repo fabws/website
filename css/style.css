@@ -52,8 +52,8 @@ button {
 
 .button:hover,
 button:hover {
-    /* opacity: .7; */
-    background-color: #fff2;
+    opacity: .7;
+    /* background-color: #fff2; */
 }
 
 .button>a,
