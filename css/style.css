@@ -75,6 +75,10 @@ video {
     max-width: 100%;
 }
 
+img {
+    object-fit: contain;
+}
+
 nav#navbar {
     /* padding: 0 20px; */
     box-shadow: 2px 2px 12px #0000;
