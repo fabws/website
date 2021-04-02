@@ -21,4 +21,4 @@ states.forEach((state) => {
     });
 });
 
-setSwitch(location.hash);
+setSwitch(location.hash || "#swish");
