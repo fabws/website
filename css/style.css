@@ -366,10 +366,15 @@ h1 {
     display: none;
 }
 
+
 #image-showcase>img {
     border: 1px solid white;
 }
 
 #image-showcase>p {
     color: white;
+}
+
+.hidden {
+    display: none;
 }
