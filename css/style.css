@@ -293,6 +293,11 @@ th {
         content: "Innehåll: ";
         font-weight: bold;
     }
+
+    .switch-section {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 th {
