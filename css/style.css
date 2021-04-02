@@ -215,7 +215,8 @@ table {
 
 .switch {
     height: 48px;
-    background-color: #aaa;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid #ccc;
     align-items: center;
     border-radius: 5px;
     margin-bottom: 16px;
@@ -225,11 +226,18 @@ table {
 
 .switch a {
     color: black;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
 }
 
 .switch a.selected {
     font-weight: bold;
+    background-color: #ccc;
 }
 
 .switch-section {
