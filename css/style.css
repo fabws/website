@@ -154,12 +154,12 @@ nav#navbar.scrolled {
 
 #navbar-items a {
     border-bottom: 2px solid transparent;
-    margin-left: 20px;
 }
 
 #navbar-items li {
     transition-duration: 250ms;
     transition-property: opacity;
+    margin-left: 20px;
 }
 
 #navbar-items li a.facebook {
