@@ -217,7 +217,7 @@ nav#navbar.scrolled {
     }
 
     #navbar-items li {
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 
     nav#navbar:not(.open) #navbar-items {
