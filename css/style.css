@@ -192,6 +192,7 @@ nav#navbar.scrolled {
         right: 0;
         bottom: 0;
         height: 100%;
+        padding: 0 10px;
     }
 
     #navbar.open.scrolled {
@@ -399,4 +400,29 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+.hambuger-parts>* {
+    transition-duration: 250ms;
+    transition-property: opacity, transform;
+}
+
+#navbar .hambuger-parts #row1 {
+    transform-origin: top left;
+}
+
+#navbar .hambuger-parts #row3 {
+    transform-origin: bottom left;
+}
+
+#navbar.open .hambuger-parts #row1 {
+    transform: translateX(5px) rotate(45deg);
+}
+
+#navbar.open .hambuger-parts #row2 {
+    opacity: 0;
+}
+
+#navbar.open .hambuger-parts #row3 {
+    transform: translateX(5px) rotate(-45deg);
 }
