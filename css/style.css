@@ -174,15 +174,15 @@ nav#navbar.scrolled {
     font-weight: inherit;
 }
 
+#navbar-items strong a {
+    border-bottom-color: black;
+}
+
 @media screen and (max-width: 768px) {
 
     #hamburger-menu-icon {
         display: block;
         line-height: 0;
-    }
-
-    #navbar-items strong a {
-        border-bottom-color: black;
     }
 
     #navbar.open {
