@@ -424,7 +424,7 @@ h1 {
 }
 
 #navbar.open .hambuger-parts #row1 {
-    transform: translateX(5px) rotate(45deg);
+    transform: translateX(13px) rotate(45deg);
 }
 
 #navbar.open .hambuger-parts #row2 {
@@ -432,5 +432,5 @@ h1 {
 }
 
 #navbar.open .hambuger-parts #row3 {
-    transform: translateX(5px) rotate(-45deg);
+    transform: translateX(13px) rotate(-45deg);
 }
