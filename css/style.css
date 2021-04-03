@@ -317,11 +317,11 @@ th {
 }
 
 th {
-    background-color: #bbb;
+    background-color: #ccc;
 }
 
-tr:nth-child(odd) {
-    background-color: #ddd;
+tr:nth-child(even) {
+    background-color: #ededed;
 }
 
 #landing {
