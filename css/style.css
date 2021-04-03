@@ -10,7 +10,7 @@
 }
 
 hr {
-    border-width: 1;
+    border-width: 1px;
     width: 100%;
     display: none;
     margin: 0;
