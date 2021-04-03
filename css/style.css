@@ -80,7 +80,6 @@ img {
 }
 
 nav#navbar {
-    /* padding: 0 20px; */
     box-shadow: 2px 2px 12px #0000;
     width: 100%;
     transition-duration: 200ms;
@@ -143,7 +142,6 @@ nav#navbar.scrolled {
     padding: 0;
     margin: 0;
     display: flex;
-    /* gap: 20px; */
 }
 
 #navbar-items a {
@@ -183,7 +181,6 @@ nav#navbar.scrolled {
 
         text-align: center;
         background-color: #fffd;
-        /* flex-direction: column; */
         display: grid;
         grid-template-areas:
             "ti hm"
@@ -263,8 +260,6 @@ th {
     border-bottom: none;
     border-left: none;
     padding: 8px 12px;
-    /* word-break: normal; */
-    /* word-break: break-all; */
 }
 
 @media screen and (max-width: 700px) {
@@ -343,7 +338,6 @@ tr:nth-child(odd) {
     justify-content: space-between;
     flex-direction: column;
     flex-grow: 1;
-    /* gap: 20px; */
 }
 
 #photo-grid>img {
