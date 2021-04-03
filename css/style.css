@@ -18,6 +18,7 @@ hr {
 }
 
 .narrow {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -33,6 +34,7 @@ html {
 html,
 body {
     margin: 0;
+    min-height: 100vh;
 }
 
 .button,
@@ -60,6 +62,8 @@ button:hover {
 
 body {
     padding-top: 72px;
+    display: flex;
+    flex-direction: column;
 }
 
 body>* {
@@ -101,6 +105,10 @@ footer {
     color: white;
     background-color: #171818;
     margin-top: 50px;
+}
+
+.spacer {
+    flex-grow: 1;
 }
 
 footer a {
