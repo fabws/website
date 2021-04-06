@@ -1,3 +1,3 @@
-# WU_projektVT2021_2A
+# FABWS Website
 
 https://www.fabws.org/
