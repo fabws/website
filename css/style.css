@@ -297,16 +297,11 @@ th {
     }
 
     table.project td:nth-child(1)::before {
-        content: "Värde (kr): ";
-        font-weight: bold;
-    }
-
-    table.project td:nth-child(2)::before {
         content: "Projekt: ";
         font-weight: bold;
     }
 
-    table.project td:nth-child(3)::before {
+    table.project td:nth-child(2)::before {
         content: "Innehåll: ";
         font-weight: bold;
     }
